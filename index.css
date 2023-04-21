@@ -1,0 +1,133 @@
+html{
+    height:100vh;
+    max-width: 100%;
+}
+
+
+body{
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    font-family: Race Sport;
+    background: url("media/scoreBackground.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: aliceblue;
+}
+
+
+@media only screen and (min-width: 844px) and (orientation: portrait)   
+    { .team-home, .team-away { font-size: 30px; padding-top: 5px; }} .score-board-title{font-size: 50px;} #home-score, #away-score{width: 200px; }
+
+@media only screen and (min-width: 390px) and (orientation: landscape)
+    { .team-home, .team-away { font-size: 30px; padding-top: 5px; }} .score-board-title{font-size: 50px;} #home-score, #away-score{width: 200px; }
+
+@media only screen and (min-width: 280px) and (max-width: 398px) 
+    { .team-home, .team-away { font-size: 30px; padding-top: 5px; }} .score-board-title{font-size: 50px;} #home-score, #away-score{width: 200px; }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and  (min-width: 400px) and (max-width: 600px) 
+    {.team-home, .team-away {font-size: 30px; padding-top: 12px ;}} #home-score, #away-score{width: 200px; }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) 
+    {.team-home, .team-away {font-size: 40px; padding-top: 12px ;}} #home-score, #away-score{width: 300px; }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+    {.team-home, .team-away {font-size: 60px; padding-top: 25px ;}}#home-score, #away-score{width: 300px; }
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) 
+    {.team-home, .team-away {font-size: 60px; padding-top: 25px ;}} #home-score, #away-score{width: 300px; }
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) 
+    {.team-home, .team-away {font-size: 60px; padding-top: 25px ;}}
+    #home-score, #away-score{width: 300px; }
+
+
+.score-board-title{
+    color: aliceblue;
+    text-shadow: 2px 4px 1px blue ;
+}
+@font-face {
+    src: url("Race Sport.ttf");
+    font-family: Race Sport;
+}
+
+.container{
+    margin: auto;
+}
+
+.team-sides{
+    display: flex;
+    margin: auto;
+}
+
+.team-home, .team-away{
+    /* font-size: 60px; */
+    border: 3px solid black;
+    /* padding-top: 25px ; */
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: black;
+}
+
+.score{
+    display: flex;
+    justify-content: center;
+}
+
+#home-score, #away-score {
+    height: 200px;
+    /* width: 300px;  */
+    margin: auto;
+    background-color: black;
+    color: aliceblue;
+    font-size: 150px;
+    margin-bottom: 20px;
+}
+
+#home-score{
+    background: blue;
+    text-shadow: 2px 4px 1px black ;
+}
+
+#away-score{
+    background:white;
+    color: blue;
+    text-shadow: 2px 4px 1px black ;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+
+.home-score-btn, .away-score-btn{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+#increment-btn{
+    background: url("media/arrowUpWhite.png");
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-color: black;
+    margin-right:20px ;
+    border: 4px solid white;
+}
+
+#decrement-btn{
+    background: url("media/arrowDownWhite.png");
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-color:black ;
+    border: 4px solid white;
+}
